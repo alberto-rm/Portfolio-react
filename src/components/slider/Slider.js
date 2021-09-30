@@ -12,7 +12,7 @@ const Slider = () => {
       </div>
       <Carousel
         arrows
-        sliderPerPages={3}
+        slidesPerPages={3}
         infinite
         animationSpeed={200}
         centered
