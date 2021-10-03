@@ -11,13 +11,35 @@ const Slider = () => {
         <h2>My Projects</h2>
       </div>
       <Carousel
-        plugins={["infinite", "arrows"]}
+        plugins={[
+          "centered",
+          "infinite",
+          "arrows",
+          {
+            resolve: slidesToShowPlugin,
+            options: {
+              numberOfSlides: 2,
+            },
+          },
+        ]}
+        // arrows
+        slidesPerPages={3}
+        infinite
+        animationSpeed={200}
+        // centered
+        offset={5}
+        // itemWidth={400}
         slides={Slides}
         breakpoints={{
           960: {
-            slidesPerPages: 1,
-            arrows: false,
-            itemWidth: 250,
+            plugins: [
+              {
+                resolve: slidesToShowPlugin,
+                options: {
+                  numberOfSlides: 2,
+                },
+              },
+            ],
           },
         }}
       />
