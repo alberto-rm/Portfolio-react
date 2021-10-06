@@ -22,11 +22,9 @@ const Slider = () => {
             },
           },
         ]}
-        // arrows
         slidesPerPages={3}
         infinite
         animationSpeed={200}
-        // centered
         offset={5}
         // itemWidth={400}
         slides={Slides}
