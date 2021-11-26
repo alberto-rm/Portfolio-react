@@ -1,5 +1,5 @@
 import React from "react";
-import "./Slider.css";
+import "./Slider.scss";
 
 const slidesInfo = [
   {
@@ -19,7 +19,7 @@ const slidesInfo = [
   },
 ];
 
-const slides = slidesInfo.map((slide) => (
+const Slides = slidesInfo.map((slide) => (
   <div className="slide-container">
     <img src={slide.src} alt={slide.alt} />
     <div className="slide-desc">
@@ -28,4 +28,4 @@ const slides = slidesInfo.map((slide) => (
   </div>
 ));
 
-export default slides;
+export default Slides;
